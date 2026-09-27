@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart - STYLEHUB</title>
+
+    <title>Cart - STYLEHUB</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -13,132 +14,208 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            STYLEHUB
-        </div>
+<header class="main-header">
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-            <a href="cart.html">Cart</a>
-        </nav>
-    </header>
+    <a href="index.html" class="brand">
+        STYLEHUB
+    </a>
 
-    <section class="cart-hero">
+    <nav class="main-nav">
 
-        <p>STYLEHUB</p>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
 
-        <h1>Your Shopping Cart</h1>
+        <a href="cart.html" class="cart-link active">
+            Cart
+            <span class="cart-count">0</span>
+        </a>
 
-        <span>
-            Review your selected items before continuing.
-        </span>
+    </nav>
 
-    </section>
+</header>
 
-    <section class="cart-section">
 
-        <div class="cart-container">
+<section class="cart-hero">
 
-            <div class="cart-items-section">
+    <p>
+        STYLEHUB
+    </p>
 
-                <div class="cart-section-heading">
-                    <h2>Your Items</h2>
+    <h1>
+        Your Shopping Cart
+    </h1>
 
-                    <a href="shop.html">
-                        Continue Shopping
-                    </a>
-                </div>
+    <span>
+        Review your selected pieces before checking out.
+    </span>
 
-                <div id="cart-items"></div>
+</section>
 
-            </div>
 
-            <div class="cart-summary">
+<section class="cart-section">
 
-                <h2>Order Summary</h2>
+    <div class="cart-container">
 
-                <div class="summary-line">
-                    <span>Subtotal</span>
 
-                    <strong id="cart-subtotal">
-                        KSh 0
-                    </strong>
-                </div>
+        <!-- CART ITEMS -->
 
-                <div class="summary-line">
-                    <span>Delivery</span>
+        <div class="cart-items-section">
 
-                    <strong>Free</strong>
-                </div>
+            <div class="cart-section-heading">
 
-                <div class="summary-divider"></div>
+                <h2>
+                    Your Items
+                </h2>
 
-                <div class="summary-total">
-                    <span>Total</span>
-
-                    <strong id="cart-total">
-                        KSh 0
-                    </strong>
-                </div>
-
-                <button
-                    class="checkout-button"
-                    onclick="alert('Checkout coming soon!')">
-                    PROCEED TO CHECKOUT
-                </button>
-
-                <button
-                    class="continue-button"
-                    onclick="window.location.href='shop.html'">
-                    CONTINUE SHOPPING
-                </button>
+                <a href="shop.html">
+                    Continue Shopping
+                </a>
 
             </div>
 
+
+            <div id="cart-items"></div>
+
         </div>
 
-    </section>
 
-    <section class="cart-cta">
+        <!-- SUMMARY -->
 
-        <h2>STYLE • CONFIDENCE • YOU</h2>
+        <div class="cart-summary">
 
-        <p>
-            Thank you for shopping with STYLEHUB.
-        </p>
+            <h2>
+                Order Summary
+            </h2>
 
-        <button onclick="window.location.href='shop.html'">
-            KEEP SHOPPING
-        </button>
 
-    </section>
+            <div class="summary-line">
 
-    <footer>
+                <span>
+                    Subtotal
+                </span>
 
-        <div class="footer-logo">
-            STYLEHUB
+                <strong id="cart-subtotal">
+                    KSh 0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-line">
+
+                <span>
+                    Delivery
+                </span>
+
+                <strong>
+                    Free
+                </strong>
+
+            </div>
+
+
+            <div class="summary-divider"></div>
+
+
+            <div class="summary-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cart-total">
+                    KSh 0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="checkout-button"
+                onclick="alert('Checkout coming soon!')">
+
+                PROCEED TO CHECKOUT
+
+            </button>
+
+
+            <button
+                class="continue-button"
+                onclick="window.location.href='shop.html'">
+
+                CONTINUE SHOPPING
+
+            </button>
+
         </div>
 
-        <p>
-            STYLE • CONFIDENCE • YOU
-        </p>
+    </div>
 
-        <div class="footer-links">
+</section>
+
+
+<section class="cart-cta">
+
+    <h2>
+        STYLE • CONFIDENCE • YOU
+    </h2>
+
+    <p>
+        Thank you for shopping with STYLEHUB.
+    </p>
+
+    <button onclick="window.location.href='shop.html'">
+        KEEP SHOPPING
+    </button>
+
+</section>
+
+
+<footer class="main-footer">
+
+    <div class="footer-top">
+
+        <div>
+
+            <h2>
+                STYLEHUB
+            </h2>
+
+            <p>
+                YOUR STYLE. YOUR STATEMENT.
+            </p>
+
+        </div>
+
+
+        <div class="footer-navigation">
+
             <a href="index.html">Home</a>
             <a href="shop.html">Shop</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+
         </div>
 
-        <p class="copyright">
-            © 2026 STYLEHUB. All Rights Reserved.
-        </p>
+    </div>
 
-    </footer>
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 STYLEHUB
+        </span>
+
+        <span>
+            STYLE • CONFIDENCE • YOU
+        </span>
+
+    </div>
+
+</footer>
 
 </body>
 

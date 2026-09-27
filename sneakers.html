@@ -4,88 +4,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Classic Sneakers - STYLEHUB</title>
+
     <link rel="stylesheet" href="css/style.css">
+
     <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">STYLEHUB</div>
+<header class="main-header">
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-            <a href="cart.html">Cart</a>
-        </nav>
-    </header>
+    <a href="index.html" class="brand">
+        STYLEHUB
+    </a>
 
+    <nav class="main-nav">
 
-    <section class="product-page">
+        <a href="index.html">Home</a>
 
-        <div class="product-image-large">
-            <span class="product-badge">TRENDING</span>
-            <img src="images/sneakers.jpg" alt="Classic Sneakers">
-        </div>
+        <a href="shop.html">Shop</a>
 
-        <div class="product-details-info">
+        <a href="about.html">About</a>
 
-            <p class="product-category">FOOTWEAR</p>
+        <a href="contact.html">Contact</a>
 
-            <h1>Classic Sneakers</h1>
+        <a href="cart.html" class="cart-link">
+            Cart
+            <span class="cart-count">0</span>
+        </a>
 
-            <p class="product-price">KSh 3,000</p>
+    </nav>
 
-            <p class="product-description-large">
-                Clean and comfortable sneakers perfect for everyday
-                outfits and casual occasions. A versatile addition
-                to your wardrobe.
-            </p>
-
-            <div class="product-divider"></div>
-
-            <p class="product-note">
-                ✓ Comfortable &nbsp;&nbsp; ✓ Modern &nbsp;&nbsp; ✓ Versatile
-            </p>
-
-            <button
-                class="add-cart-button"
-                onclick="addToCart('Classic Sneakers', 3000, 'images/sneakers.jpg')">
-                ADD TO CART
-            </button>
-
-            <button
-                class="back-shop-button"
-                onclick="window.location.href='shop.html'">
-                ← BACK TO SHOP
-            </button>
-
-        </div>
-
-    </section>
+</header>
 
 
-    <footer>
+<section class="product-page">
 
-        <div class="footer-logo">STYLEHUB</div>
+    <div class="product-image-large">
 
-        <p>STYLE • CONFIDENCE • YOU</p>
+        <span class="product-badge">
+            TRENDING
+        </span>
 
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
+        <img
+            src="images/sneakers.jpg"
+            alt="Classic Sneakers">
 
-        <p class="copyright">
-            © 2026 STYLEHUB. All Rights Reserved.
+    </div>
+
+
+    <div class="product-details-info">
+
+        <p class="product-category">
+            FOOTWEAR
         </p>
 
-    </footer>
+        <h1>
+            Classic Sneakers
+        </h1>
+
+        <p class="product-price">
+            KSh 3,000
+        </p>
+
+        <p class="product-description-large">
+            Clean and versatile sneakers made for everyday
+            movement and casual style. A timeless addition
+            to almost any outfit.
+        </p>
+
+        <div class="product-divider"></div>
+
+        <p class="product-note">
+            ✓ Comfortable
+            &nbsp;&nbsp;
+            ✓ Modern
+            &nbsp;&nbsp;
+            ✓ Versatile
+        </p>
+
+        <button
+            class="add-cart-button"
+            onclick="addToCart('Classic Sneakers', 3000, 'images/sneakers.jpg')">
+
+            ADD TO CART
+
+        </button>
+
+        <button
+            class="back-shop-button"
+            onclick="window.location.href='shop.html'">
+
+            ← BACK TO SHOP
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="brand-banner">
+
+    <div>
+
+        <p>
+            STYLEHUB FOOTWEAR
+        </p>
+
+        <h2>
+            Walk In<br>
+            Your Own<br>
+            Style.
+        </h2>
+
+        <a href="shop.html">
+            EXPLORE MORE →
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer class="main-footer">
+
+    <div class="footer-top">
+
+        <div>
+
+            <h2>
+                STYLEHUB
+            </h2>
+
+            <p>
+                YOUR STYLE. YOUR STATEMENT.
+            </p>
+
+        </div>
+
+        <div class="footer-navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="shop.html">Shop</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="cart.html">Cart</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 STYLEHUB
+        </span>
+
+        <span>
+            STYLE • CONFIDENCE • YOU
+        </span>
+
+    </div>
+
+</footer>
 
 </body>
+
 </html>
