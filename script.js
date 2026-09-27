@@ -1,4 +1,5 @@
 function addToCart(name, price, image) {
+
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     cart.push({
@@ -12,19 +13,30 @@ function addToCart(name, price, image) {
     window.location.href = "cart.html";
 }
 
+
 function displayCart() {
+
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     let cartItems = document.getElementById("cart-items");
     let cartTotal = document.getElementById("cart-total");
+    let cartSubtotal = document.getElementById("cart-subtotal");
 
     if (!cartItems || !cartTotal) {
         return;
     }
 
     if (cart.length === 0) {
-        cartItems.innerHTML = "<p>Your cart is currently empty.</p>";
-        cartTotal.innerHTML = "Total: KSh 0";
+
+        cartItems.innerHTML =
+            "<p>Your cart is currently empty.</p>";
+
+        if (cartSubtotal) {
+            cartSubtotal.innerHTML = "KSh 0";
+        }
+
+        cartTotal.innerHTML = "KSh 0";
+
         return;
     }
 
@@ -32,29 +44,44 @@ function displayCart() {
 
     cartItems.innerHTML = "";
 
-    cart.forEach(function(product) {
+    cart.forEach(function(product, index) {
+
         total += product.price;
 
         cartItems.innerHTML += `
-    <div class="cart-item">
-        <img src="${product.image}" alt="${product.name}">
-        <h3>${product.name}</h3>
-        <p>KSh ${product.price}</p>
-        <button onclick="removeFromCart(${cart.indexOf(product)})">
-            Remove
-        </button>
-    </div>
+            <div class="cart-item">
+
+                <img
+                    src="${product.image}"
+                    alt="${product.name}">
+
+                <h3>
+                    ${product.name}
+                </h3>
+
+                <p>
+                    KSh ${product.price}
+                </p>
+
+                <button
+                    onclick="removeFromCart(${index})">
+                    REMOVE
+                </button>
+
+            </div>
         `;
     });
 
-    cartTotal.innerHTML = "Total: KSh " + total;
+    if (cartSubtotal) {
+        cartSubtotal.innerHTML = "KSh " + total;
+    }
+
+    cartTotal.innerHTML = "KSh " + total;
 }
 
-displayCart();
-
-displayCart();
 
 function removeFromCart(index) {
+
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     cart.splice(index, 1);
@@ -63,3 +90,6 @@ function removeFromCart(index) {
 
     displayCart();
 }
+
+
+displayCart();

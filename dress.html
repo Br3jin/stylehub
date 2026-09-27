@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Women's Dress - STYLEHUB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's T-shirt - STYLEHUB</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
@@ -10,43 +12,80 @@
 <body>
 
     <header>
+        <div class="logo">STYLEHUB</div>
 
-    <div class="logo">
-        STYLEHUB
-    </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="cart.html">Cart</a>
-    </nav>
 
-</header>
+    <section class="product-page">
 
-<section class="product-details">
+        <div class="product-image-large">
+            <span class="product-badge">POPULAR</span>
+            <img src="images/tshirt.jpg" alt="Men's T-shirt">
+        </div>
 
-    <img src="images/dress.jpg" alt="Women's Dress">
+        <div class="product-details-info">
 
-    <div class="product-info">
+            <p class="product-category">MEN'S WEAR</p>
 
-        <h1>Women's Dress</h1>
+            <h1>Men's T-shirt</h1>
 
-        <p class="price">KSh 2,500</p>
+            <p class="product-price">KSh 1,500</p>
 
-        <p>
-            A stylish and comfortable women's dress perfect for
-            casual occasions and everyday fashion.
+            <p class="product-description-large">
+                Comfortable and stylish men's T-shirt suitable for
+                casual wear and everyday outfits. A simple piece
+                that can easily become part of your everyday style.
+            </p>
+
+            <div class="product-divider"></div>
+
+            <p class="product-note">
+                ✓ Stylish &nbsp;&nbsp; ✓ Comfortable &nbsp;&nbsp; ✓ Affordable
+            </p>
+
+            <button
+                class="add-cart-button"
+                onclick="addToCart('Men\'s T-shirt', 1500, 'images/tshirt.jpg')">
+                ADD TO CART
+            </button>
+
+            <button
+                class="back-shop-button"
+                onclick="window.location.href='shop.html'">
+                ← BACK TO SHOP
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-logo">STYLEHUB</div>
+
+        <p>STYLE • CONFIDENCE • YOU</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 STYLEHUB. All Rights Reserved.
         </p>
 
-        <button onclick="addToCart('Women\'s Dress', 2500, 'images/dress.jpg')">
-    Add to Cart
-</button>
-
-    </div>
-
-</section>
+    </footer>
 
 </body>
 </html>

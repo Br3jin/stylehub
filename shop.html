@@ -1,65 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop - STYLEHUB</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-
-    <div class="logo">
-        STYLEHUB
-    </div>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="cart.html">Cart</a>
-    </nav>
-
-</header>
-
-<section class="products">
-
-    <h2>Shop Our Collection</h2>
-
-    <div class="product-container">
-
-        <div class="product-card">
-            <img src="images/tshirt.jpg" alt="Men's T-shirt">
-            <h3>Men's T-shirt</h3>
-            <p>KSh 1,500</p>
-            <button onclick="window.location.href='tshirt.html'">
-    View Product
-</button>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            STYLEHUB
         </div>
 
-        <div class="product-card">
-            <img src="images/dress.jpg" alt="Women's Dress">
-            <h3>Women's Dress</h3>
-            <p>KSh 2,500</p>
-          <button onclick="window.location.href='dress.html'">
-    View Product
-</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+
+    <!-- SHOP HERO -->
+    <section class="shop-hero">
+
+        <p>STYLEHUB COLLECTION</p>
+
+        <h1>Shop Our Collection</h1>
+
+        <span>
+            Discover fashion that fits your style, personality and budget.
+        </span>
+
+    </section>
+
+
+    <!-- SHOP PRODUCTS -->
+    <section class="shop-products">
+
+        <div class="shop-heading">
+            <div>
+                <p class="section-small">OUR PRODUCTS</p>
+                <h2>Latest Styles</h2>
+            </div>
+
+            <p class="product-count">3 Products</p>
         </div>
 
-        <div class="product-card">
-            <img src="images/sneakers.jpg" alt="Classic Sneakers">
-            <h3>Classic Sneakers</h3>
-            <p>KSh 3,000</p>
-            <button onclick="window.location.href='sneakers.html'">
-    View Product
-</button>
+
+        <div class="shop-grid">
+
+            <!-- T-SHIRT -->
+            <div class="shop-card">
+
+                <div class="shop-image">
+                    <span class="badge">POPULAR</span>
+
+                    <img src="images/tshirt.jpg" alt="Men's T-shirt">
+                </div>
+
+                <div class="shop-info">
+
+                    <p class="category">MEN'S WEAR</p>
+
+                    <h3>Men's T-shirt</h3>
+
+                    <p class="description">
+                        Comfortable and stylish men's T-shirt suitable
+                        for casual wear and everyday outfits.
+                    </p>
+
+                    <div class="shop-bottom">
+
+                        <strong>KSh 1,500</strong>
+
+                        <button onclick="window.location.href='tshirt.html'">
+                            VIEW
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DRESS -->
+            <div class="shop-card">
+
+                <div class="shop-image">
+                    <span class="badge">NEW</span>
+
+                    <img src="images/dress.jpg" alt="Women's Dress">
+                </div>
+
+                <div class="shop-info">
+
+                    <p class="category">WOMEN'S WEAR</p>
+
+                    <h3>Women's Dress</h3>
+
+                    <p class="description">
+                        Elegant and stylish women's dress designed
+                        for a confident and beautiful look.
+                    </p>
+
+                    <div class="shop-bottom">
+
+                        <strong>KSh 2,500</strong>
+
+                        <button onclick="window.location.href='dress.html'">
+                            VIEW
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SNEAKERS -->
+            <div class="shop-card">
+
+                <div class="shop-image">
+                    <span class="badge">TRENDING</span>
+
+                    <img src="images/sneakers.jpg" alt="Classic Sneakers">
+                </div>
+
+                <div class="shop-info">
+
+                    <p class="category">FOOTWEAR</p>
+
+                    <h3>Classic Sneakers</h3>
+
+                    <p class="description">
+                        Clean and comfortable sneakers perfect
+                        for everyday outfits and casual occasions.
+                    </p>
+
+                    <div class="shop-bottom">
+
+                        <strong>KSh 3,000</strong>
+
+                        <button onclick="window.location.href='sneakers.html'">
+                            VIEW
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
+
+    <!-- SHOP CTA -->
+    <section class="shop-cta">
+
+        <h2>Your Style Starts Here.</h2>
+
+        <p>
+            Choose your favorite piece and make it yours.
+        </p>
+
+        <button onclick="window.location.href='contact.html'">
+            CONTACT US
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            STYLEHUB
+        </div>
+
+        <p>
+            STYLE • CONFIDENCE • YOU
+        </p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 STYLEHUB. All Rights Reserved.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
