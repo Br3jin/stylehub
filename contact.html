@@ -2,15 +2,24 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact - STYLEHUB</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <title>Contact | STYLEHUB</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
 
+
 <body>
+
+
+<!-- HEADER -->
 
 <header class="main-header">
 
@@ -18,16 +27,33 @@
         STYLEHUB
     </a>
 
+
     <nav class="main-nav">
 
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="shop.html">
+            Shop
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
 
         <a href="cart.html" class="cart-link">
+
             Cart
-            <span class="cart-count">0</span>
+
+            <span class="cart-count">
+                0
+            </span>
+
         </a>
 
     </nav>
@@ -35,198 +61,153 @@
 </header>
 
 
+
+<!-- CONTACT HERO -->
+
 <section class="contact-hero">
 
-    <p>GET IN TOUCH</p>
+    <p>
+        GET IN TOUCH
+    </p>
 
     <h1>
-        Contact STYLEHUB
+        Let's talk style.
     </h1>
 
     <span>
-        We're here to help.
+        Questions, feedback or just want to say hello?
     </span>
 
 </section>
 
 
+
+<!-- CONTACT CONTENT -->
+
 <section class="contact-section">
 
-    <div class="contact-container">
 
+    <div class="contact-info">
 
-        <!-- CONTACT INFORMATION -->
-
-        <div class="contact-info">
-
-            <p class="section-small">
-                LET'S TALK
-            </p>
-
-            <h2>
-                We'd Love To Hear From You.
-            </h2>
-
-            <p>
-                Have a question about our collection,
-                need help with an order, or simply want
-                to say hello? Get in touch with us.
-            </p>
-
-
-            <div class="contact-detail">
-
-                <div class="contact-icon">
-                    @
-                </div>
-
-                <div>
-
-                    <h3>
-                        Email
-                    </h3>
-
-                    <p>
-                        stylehub@example.com
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-detail">
-
-                <div class="contact-icon">
-                    ☎️
-                </div>
-
-                <div>
-
-                    <h3>
-                        Phone
-                    </h3>
-
-                    <p>
-                        +254 700 000 000
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-detail">
-
-                <div class="contact-icon">
-                    ⌖
-                </div>
-
-                <div>
-
-                    <h3>
-                        Location
-                    </h3>
-
-                    <p>
-                        Kenya
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- CONTACT FORM -->
-
-        <div class="contact-form-box">
-
-            <p class="section-small">
-                SEND A MESSAGE
-            </p>
-
-            <h2>
-                Let's Talk.
-            </h2>
-
-
-            <form>
-
-                <label for="name">
-                    YOUR NAME
-                </label>
-
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                    required>
-
-
-                <label for="email">
-                    EMAIL ADDRESS
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required>
-
-
-                <label for="message">
-                    MESSAGE
-                </label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Write your message here..."
-                    required></textarea>
-
-
-                <button type="submit">
-                    SEND MESSAGE →
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="brand-banner">
-
-    <div>
-
-        <p>
-            STYLEHUB
+        <p class="contact-label">
+            CONTACT STYLEHUB
         </p>
 
         <h2>
-            Your Style.<br>
-            Your Statement.
+            We'd love to hear from you.
         </h2>
 
-        <a href="shop.html">
-            SHOP THE COLLECTION →
-        </a>
+        <p>
+            Reach out to us about products, orders,
+            feedback or anything else you'd like to know.
+        </p>
+
+
+        <div class="contact-detail">
+
+            <strong>
+                Email
+            </strong>
+
+            <span>
+                stylehub@example.com
+            </span>
+
+        </div>
+
+
+        <div class="contact-detail">
+
+            <strong>
+                Location
+            </strong>
+
+            <span>
+                Kenya
+            </span>
+
+        </div>
 
     </div>
 
+
+
+    <!-- CONTACT FORM -->
+
+    <form
+        class="contact-form"
+        onsubmit="event.preventDefault(); alert('Thanks for contacting STYLEHUB!');">
+
+
+        <label for="name">
+            Name
+        </label>
+
+        <input
+            id="name"
+            type="text"
+            placeholder="Your name"
+            required>
+
+
+        <label for="email">
+            Email
+        </label>
+
+        <input
+            id="email"
+            type="email"
+            placeholder="Your email"
+            required>
+
+
+        <label for="message">
+            Message
+        </label>
+
+        <textarea
+            id="message"
+            rows="6"
+            placeholder="Your message"
+            required></textarea>
+
+
+        <button type="submit">
+            SEND MESSAGE
+        </button>
+
+    </form>
+
 </section>
 
+
+
+<!-- BRAND BANNER -->
+
+<section class="brand-banner">
+
+    <p>
+        STYLEHUB
+    </p>
+
+    <h2>
+        STYLE • CONFIDENCE • YOU
+    </h2>
+
+    <span>
+        Wear what represents you.
+    </span>
+
+</section>
+
+
+
+<!-- FOOTER -->
 
 <footer class="main-footer">
 
     <div class="footer-top">
+
 
         <div>
 
@@ -243,11 +224,25 @@
 
         <div class="footer-navigation">
 
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="cart.html">Cart</a>
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
 
         </div>
 
@@ -267,6 +262,7 @@
     </div>
 
 </footer>
+
 
 </body>
 
